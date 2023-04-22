@@ -12,6 +12,7 @@ body {
 
     --bright-blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
+    --bright-blue-hover: rgb(117	154	248	);
 
     /* ### Neutral */
 
@@ -118,10 +119,6 @@ section#intro {
     padding-left: 1rem;
 }
 
-#intro form input::placeholder {
-    color: var(--light-gray);
-}
-
 #intro form button {
     color: #fff;
     border: none;
@@ -130,6 +127,11 @@ section#intro {
     font-weight: 500;
     height: 34px;
     background-color: var(--bright-blue);
+    transition: background-color .4s ease-in-out;
+}
+
+#intro form button:hover {
+    background-color: var(--bright-blue-hover);
 }
 
 /*stay productive section */
@@ -281,6 +283,11 @@ footer #get-early-access {
     font-weight: 500;
     height: 34px;
     background-color: var(--bright-blue);
+    transition: background-color .4s ease-in-out;
+}
+
+#get-early-access form button:hover {
+    background-color: var(--bright-blue-hover);
 }
 
 footer .bottom {
@@ -325,6 +332,11 @@ footer .bottom nav ul {
 footer .bottom ul li a {
     color: white;
     text-decoration: none;
+    transition: color .4s ease-in-out;
+}
+
+footer .bottom ul li a:hover {
+    color: var(--bright-blue);
 }
 
 footer .bottom .social ul {
@@ -344,7 +356,29 @@ footer .bottom .social ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:  all .4s ease-in-out;
 }
+
+footer .bottom .social ul li a:hover {
+    border: 1px solid var(--bright-blue);
+    color: var(--bright-blue);
+}
+
+/* Errors */
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.error-msg {
+    color: red;
+    font-size: .7rem;
+}
+
 
 /* Media queries */
 
@@ -410,7 +444,7 @@ footer .bottom .social ul li a {
 
     #intro .right form button {
         width: 35%;
-        height: 40px;
+        height: 44px;
     }
 
     /* Stay productive */
@@ -452,8 +486,33 @@ footer .bottom .social ul li a {
         justify-content: center;
     }
 
-    #get-early-access form button  {
-        width: 30%;
+    #get-early-access p {
+        padding-right: 2rem;
     }
 
+    #get-early-access form input {
+        height: 40px;
+    }
+
+    #get-early-access form button  {
+        width: 30%;
+        height: 40px;
+    }
+
+    footer .bottom {
+        padding: 6rem 14rem 6rem 3rem;
+    }
+
+    footer .bottom .logo {
+        margin-bottom: 1rem;
+    }
+
+    footer .contact-social {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .bottom .social ul {
+        margin: 0;
+    }
 }
