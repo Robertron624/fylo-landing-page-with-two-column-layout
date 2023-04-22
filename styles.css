@@ -20,19 +20,24 @@ body {
 
 
 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
+button {
+    cursor: pointer;
+}
+
+h1, h2, nav li a {
     color: var(--very-dark-blue);
+    font-family: 'Raleway', sans-serif;
 }
 
 #intro img,
@@ -339,4 +344,70 @@ footer .bottom .social ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Media queries */
+
+@media screen and (min-width:768px){
+    header .container {
+        padding: 0 3rem;
+    }
+
+    header .logo img{
+        width: 150px;
+    }
+
+    .container nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .container nav ul li a{
+        font-size: 1rem !important;
+    }
+
+    main {
+        padding: 0 3rem;
+    }
+
+    section#intro {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #intro .intro-image {
+        width: 50%;
+    }
+
+    #intro .right {
+        order: -1;
+        width: 50%;
+        padding: 0 1rem;
+    }
+
+    #intro .right h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    #intro .right p {
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    #intro .right form  {
+        flex-direction: row;
+    }
+
+    #intro .right form input {
+        width: 65%;
+        height: 40px;
+    }
+
+    #intro .right form button {
+        width: 35%;
+        height: 40px;
+    }
+
 }
