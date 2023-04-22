@@ -24,12 +24,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
+![image](https://user-images.githubusercontent.com/72587880/233804677-a1e945de-820d-4412-9fa9-c44683b61b40.png)
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/fylo-landing-page-with-two-column-layout)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://phenomenal-marshmallow-7979f0.netlify.app/)
 ## My process
 
 ### Built with
