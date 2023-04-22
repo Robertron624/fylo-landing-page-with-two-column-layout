@@ -97,6 +97,14 @@ section#intro {
     text-align: center;
 }
 
+#intro .right h1 {
+    margin-bottom: 1.5rem;
+}
+
+#intro .right p {
+    margin-bottom: 2rem;
+}
+
 #intro p {
     font-size: .875rem;
     line-height: 20px;
