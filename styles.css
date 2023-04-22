@@ -241,18 +241,18 @@ footer #get-early-access {
     text-align: center;
 }
 
-#get-early-access .container h2 {
+#get-early-access h2 {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: white;
 }
 
-#get-early-access .container p{
+#get-early-access p{
     margin-bottom: 1.5rem;
 }
 
-#get-early-access .container form {
+#get-early-access form {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -260,7 +260,7 @@ footer #get-early-access {
     margin-inline: auto;
 }
 
-#get-early-access .container form input {
+#get-early-access  form input {
     border: none;
     border-radius: 5px;
     font-size: .875rem;
@@ -269,11 +269,11 @@ footer #get-early-access {
     padding-left: 1rem;
 }
 
-#get-early-access .container form input::placeholder {
+#get-early-access form input::placeholder {
     color: var(--light-gray);
 }
 
-#get-early-access .container form button {
+#get-early-access form button {
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -370,6 +370,9 @@ footer .bottom .social ul li a {
         padding: 0 3rem;
     }
 
+    /* Intro section */
+
+    /* All your files */
     section#intro {
         flex-direction: row;
         text-align: left;
@@ -408,6 +411,49 @@ footer .bottom .social ul li a {
     #intro .right form button {
         width: 35%;
         height: 40px;
+    }
+
+    /* Stay productive */
+    section#stay-productive {
+        margin-bottom: 4rem;
+    }
+
+    section#stay-productive .container{
+        display: flex;
+    }
+
+    #stay-productive .container .left {
+        order: -1;
+        padding: 0 1rem;
+    }
+
+    #stay-productive .container .left button {
+        margin: 0 0 2rem;
+    }
+
+    #stay-productive .container .left .testimonial {
+        width: 50%;
+    }
+
+    footer #get-early-access {
+        text-align: left;
+        padding: 3rem 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer #get-early-access .text {
+        width: 40%;
+    }
+
+    footer #get-early-access form {
+        width: 36%;
+        margin-inline : 0;
+        justify-content: center;
+    }
+
+    #get-early-access form button  {
+        width: 30%;
     }
 
 }
